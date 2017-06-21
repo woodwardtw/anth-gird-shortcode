@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body {
+    font-family: 'montserrat', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+}
+
+a {
+  text-decoration: none;
+  color: #262626;
+}
+
+
+
+/*CLAN POSTS FIXER*/
+
+
+.clan-post-container .container .anth-item:first-child{
+    margin-left: 0;
+}
+
+
+
+
+  /*front end editor*/
+  .sap-container-wrapper .sap-author-name.sap-author-name {
+    font-size: 1.3em;
+  }
+
+
+.container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    
+}
+
+.anth-item {
+    -webkit-flex: initial;
+    flex: initial;
+    width: 350px;
+    height: 535px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 55px;
+    background-color: #fff;
+    position: relative;
+    margin-right: 10px;
+}
+
+
+.anth-item .content p {
+    line-height: 18px;
+}
+
+.info {
+    padding: 8px 0 10px 0;
+}
+
+.anth-post-title {
+    display: block;
+    vertical-align: top;
+    width: 80%;
+    margin-left: 55px;
+    line-height: 25px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    top:5px;
+}
+
+.author {
+    color: #262626;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    margin-top: 19px;
+}
+
+.date {
+    display: none;
+    float: right;
+    color: #999;
+    margin-right: 12px;
+    font-size: 12px;
+    width: 60px;
+}
+
+.author-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-position: 2px;
+    margin-left: 7px;
+    background-color: #424242;
+    border: 2px solid #db441a;
+}
+
+
+
+.img-holder {
+    height: 375px;
+    width: auto;
+    background-position: center;
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 95%;
+    height: 73px;
+}
+
+.anth-posts-social {
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 80%;
+}
+
+.anth-posts-social .dot-irecommendthis {
+    background: url(../imgs/heart.png) 0 5px no-repeat;
+    padding-left: 18px;
+    border: 0 !important;
+    margin-bottom: 5px;
+    display: inline-block;
+    text-decoration: none;
+    min-height: 28px;
+    margin-top: 0;
+}
+
+
+
+
+/*loading*/
+
+#loading {
+    width: 40%;
+    margin: 20px auto;
+    padding: 15px 20px;
+}
+
+
+/*made fancy via https://codepen.io/aurer/pen/jEGbA*/
+.loader{
+  margin: 0 0 2em;
+  height: 100px;
+  width: 20%;
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#loading .blinker {
+    display: inline-block;
+    color: #FF6700;
+    text-align: left;
+}
+
+/*
+  Set the color of the icon
+*/
+svg path,
+svg rect{
+  fill: #FF6700;
+}
+
+/*social sharing*/
+
+.airplane {
+    float: right;
+    display: inline;
+    position: absolute;
+    color: #a7a7a7;
+    cursor: pointer;
+}
+
+.share-icons {
+    display: inline;
+    width: 100px;
+    position: absolute;
+    height: 30px;
+    right: 10px;
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-width : 20px) and (max-width : 520px) {    
+/* Styles */
+    
+ .container{
+        width: 100%; 
+        margin-left: 0;
+        margin-right: 0;      
+    }
+
+ .clan-post-container .container .anth-item:first-child {
+        margin-left: 0px;
+    }
+
+    #wp-admin-bar-my-account-buddypress {
+        display: none;
+    }
+
+}
+
